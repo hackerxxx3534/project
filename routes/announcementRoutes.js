@@ -40,7 +40,7 @@ router.get(
 // POST /api/v1/announcements/:stationId
 // Protected - only admins can create announcements
 router.post(
-  "/:stationId",
+  "/:stationId/announcements",
   requireAdmin,
   [
     param("stationId")
